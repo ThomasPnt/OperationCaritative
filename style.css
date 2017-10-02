@@ -1,3 +1,44 @@
-.principaltitle {
-background-image:url(backgroundpoor.png); 
+.titreprincipal {
+background-image:url(backgroundpoor.png);
+color: white;
+text-align: center;
+width: 100%;
+height: 75px;
+line-height: 75px;
+margin-top: auto;
+}
+
+.firstpart {
+  font-family: cursive ;
+}
+
+.citation {
+  text-align: center;
+}
+
+.video {
+  display: table;
+  margin-left: 350px;
+  margin-right: 50px;
+}
+
+.secondpart {
+  display: table-cell;
+  width :550px;
+  padding: 50px 0 50px 15px;
+  vertical-align: middle;
+}
+
+.secondtitle {
+  text-align: center;
+  font-size: 30px;
+}
+
+.imgassociation {
+  display:inline;
+}
+
+.txt {
+  display: inline;
+  font-size: 10px;
 }
