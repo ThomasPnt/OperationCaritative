@@ -18,13 +18,13 @@ $prep = $pdo->prepare($query);
 $prep->bindValue(1, 'bertrand', PDO::PARAM_STR);
 $prep->bindValue(2, 'berkill1234', PDO::PARAM_STR);
 $prep->execute();
-$resultat = $pdo->query('SELECT * FROM categories');
+$resultat = $pdo->query('SELECT * FROM test');
 while ($donnees = $resultat->fetch())
 {
   echo '<br/>';
-  echo $donnees['nom'];
+  echo $donnees['test_name'];
   echo ' : ';
-  echo $donnees['description'];
+  echo $donnees['test_firstname'];
 }
 
 ?>
