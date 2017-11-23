@@ -12,11 +12,11 @@ catch(Exception $e)
     // En cas d'erreur, on affiche un message et on arrête tout
         die('Erreur : '.$e->getMessage());
 }
-$query = 'INSERT INTO categories (nom, description) VALUES (?, ?);';
+$query = 'INSERT INTO test (test_name, test_firstname) VALUES (?, ?);';
 $prep = $pdo->prepare($query);
  
-$prep->bindValue(1, 'bertand', PDO::PARAM_STR);
-$prep->bindValue(2, 'ceci est un test pour desc', PDO::PARAM_STR);
+$prep->bindValue(1, 'bertrand', PDO::PARAM_STR);
+$prep->bindValue(2, 'berkill1234', PDO::PARAM_STR);
 $prep->execute();
 $resultat = $pdo->query('SELECT * FROM categories');
 while ($donnees = $resultat->fetch())
