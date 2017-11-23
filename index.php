@@ -1,1 +1,3 @@
-<?php echo('Bonjour'); ?>
+<?php 
+include('index.html');
+echo('Bonjour'); ?>
